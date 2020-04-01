@@ -1,4 +1,4 @@
-var serverURL="http://restclass.azurewebsites.net/API/";
+var serverURL="http://localhost:8080/api/";
 var items=[];
 
 function init(){
@@ -60,7 +60,7 @@ function register(){
     // Asyn JS and XML - connecting to a server - strings, interger, or boolean values only
     //send object to the server
     $.ajax({
-        url:serverURL+"points",
+        url:serverURL+"items",
         type:"POST",
         contentType:"application/json",
         data:jsonString,

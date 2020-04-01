@@ -50,7 +50,7 @@
      }
 ];*/
 var items=[];
-var serverURL="http://restclass.azurewebsites.net/API/";
+var serverURL="http://localhost:8080/api/";
 
 
 /*functions*/
@@ -59,7 +59,7 @@ var serverURL="http://restclass.azurewebsites.net/API/";
 function fetchCatalog(){
     //get the items from the server
     $.ajax({
-        url:serverURL+"points",
+        url:serverURL+"items",
         type:"GET",
         success:function(response){
             console.log("Catalog - It works",response);
